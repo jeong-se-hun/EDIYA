@@ -1,7 +1,7 @@
 // 푸터 시작 --------------------------------------------------------------------- /
 .footer {
   background-color: $grayscaleBlack;
-  padding-bottom: 30px;
+  padding-bottom: rem(30px);
 }
 
 // footer privacy-list
@@ -12,23 +12,23 @@
   flex-wrap: wrap;
   justify-content: center;
   font-weight: 400;
-  font-size: 12px;
+  font-size: rem(12px);
   border-bottom: 1px solid rgba(97, 97, 97, 0.5);
   align-items: center;
 
   @include mobile {
-    padding: 15px 17px 24px;
+    padding: rem(15px) rem(17px) rem(24px);
 
     .privacy-item {
-      margin: 0 8px 5px;
+      margin: 0 rem(8px) rem(5px);
     }
   }
 
   @include desktop {
-    padding: 20px;
+    padding: rem(20px);
 
     .privacy-item {
-      margin: 0 10px 0;
+      margin: 0 rem(10px) 0;
     }
   }
 
@@ -41,61 +41,61 @@
 .footer-log {
   // log mobile
   @include mobile {
-    width: 160px;
+    width: rem(160px);
     height: auto;
     margin: 25px auto 0;
   }
 
   @include desktop {
-    width: 180px;
+    width: rem(180px);
     height: auto;
-    margin: 30px auto 0;
+    margin: rem(30px) auto 0;
   }
 }
 
 .address {
   color: $grayscaleGray2;
-  font-size: 12px;
+  font-size: rem(12px);
   font-weight: 400;
-  margin-top: 24px;
+  margin-top: rem(24px);
   text-align: center;
 
   .address__content {
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
   }
 
   @include mobile {
-    padding: 0 22px;
+    padding: 0 rem(22px);
 
     .address__content {
       display: inline-block;
-      margin-bottom: 5px;
-      margin-right: 11px;
+      margin-bottom: rem(5px);
+      margin-right: rem(11px);
     }
   }
 
   @include desktop {
-    padding: 0 64px;
+    padding: 0 rem(64px);
 
     .address__content {
-      margin-right: 15px;
+      margin-right: rem(15px);
     }
   }
 }
 
 .copyright {
   display: block;
-  font-size: 11px;
+  font-size: rem(11px);
   font-weight: 700;
   color: $grayscaleGray2;
   text-align: center;
 
   @include mobile {
-    margin-top: 15px;
+    margin-top: rem(15px);
   }
   @include desktop {
-    margin-top: 20px;
+    margin-top: rem(20px);
   }
 }
 

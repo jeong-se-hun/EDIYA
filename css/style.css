@@ -611,18 +611,18 @@ button {
 
 .header {
   position: relative;
-  padding: 18px;
+  padding: 1.125rem;
   border: 1px solid rgba(245, 245, 245, 0.5);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 14px;
+    padding: 0.875rem;
   }
 }
 @media screen and (min-width: 768px) {
   .header .header-inner {
-    max-width: 740px;
+    max-width: 46.25rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -631,8 +631,8 @@ button {
 }
 
 .logo {
-  width: 140px;
-  height: 14px;
+  width: 8.75rem;
+  height: 0.875rem;
 }
 
 .logo svg {
@@ -647,13 +647,13 @@ button {
     border: 0;
     padding: 0;
     background: none;
-    width: 18px;
-    height: 14px;
+    width: 1.125rem;
+    height: 0.875rem;
     overflow: hidden;
     transform: translate(0, 0);
     position: absolute;
-    top: 18px;
-    right: 16px;
+    top: 1.125rem;
+    right: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -761,7 +761,7 @@ button {
 
 .footer {
   background-color: #0f0f0f;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 
 .privacy-list {
@@ -770,24 +770,24 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   border-bottom: 1px solid rgba(97, 97, 97, 0.5);
   align-items: center;
 }
 @media screen and (max-width: 767px) {
   .privacy-list {
-    padding: 15px 17px 24px;
+    padding: 0.9375rem 1.0625rem 1.5rem;
   }
   .privacy-list .privacy-item {
-    margin: 0 8px 5px;
+    margin: 0 0.5rem 0.3125rem;
   }
 }
 @media screen and (min-width: 768px) {
   .privacy-list {
-    padding: 20px;
+    padding: 1.25rem;
   }
   .privacy-list .privacy-item {
-    margin: 0 10px 0;
+    margin: 0 0.625rem 0;
   }
 }
 .privacy-list .privacy-item:nth-child(2) {
@@ -796,64 +796,64 @@ button {
 
 @media screen and (max-width: 767px) {
   .footer-log {
-    width: 160px;
+    width: 10rem;
     height: auto;
     margin: 25px auto 0;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-log {
-    width: 180px;
+    width: 11.25rem;
     height: auto;
-    margin: 30px auto 0;
+    margin: 1.875rem auto 0;
   }
 }
 
 .address {
   color: #878787;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  margin-top: 24px;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .address .address__content {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 @media screen and (max-width: 767px) {
   .address {
-    padding: 0 22px;
+    padding: 0 1.375rem;
   }
   .address .address__content {
     display: inline-block;
-    margin-bottom: 5px;
-    margin-right: 11px;
+    margin-bottom: 0.3125rem;
+    margin-right: 0.6875rem;
   }
 }
 @media screen and (min-width: 768px) {
   .address {
-    padding: 0 64px;
+    padding: 0 4rem;
   }
   .address .address__content {
-    margin-right: 15px;
+    margin-right: 0.9375rem;
   }
 }
 
 .copyright {
   display: block;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 700;
   color: #878787;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
   .copyright {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
   }
 }
 @media screen and (min-width: 768px) {
   .copyright {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 }
 
