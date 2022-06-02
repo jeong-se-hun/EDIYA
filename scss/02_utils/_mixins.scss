@@ -22,4 +22,9 @@
   border: 0;
   padding: 0;
   background: none;
+@mixin fontDetail($weight, $size, $height, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
 }
