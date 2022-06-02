@@ -857,10 +857,80 @@ button {
   }
 }
 
-.main {
-  height: 800px;
+.banner-area {
+  position: relative;
+  padding-bottom: 10.3125rem;
+}
+.banner-area .banner {
+  width: 100%;
+  background-color: #bae5fb;
+  padding: 2.625rem 0 1.25rem;
+  text-align: center;
+}
+.banner-area .banner .inner-container .banner-text:nth-child(1) {
+  font-size: 1.5625rem;
+  font-weight: 300;
+  line-height: 2.1875rem;
+}
+.banner-area .banner .inner-container .banner-text:nth-child(1) em {
+  display: block;
+  font-size: 1.9375rem;
+  font-weight: 700;
+  color: #24388d;
+  letter-spacing: -1px;
+}
+.banner-area .banner .inner-container .banner-text:nth-child(1)::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 0.0625rem;
+  background-color: #000;
+  margin: 0.9375rem auto;
+  transform: scaleY(-50%);
+}
+.banner-area .banner .inner-container .banner-text:nth-child(2) {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+.banner-area .banner .btn-menu {
+  display: inline-block;
+  margin-top: 0.9375rem;
+  padding: 0.5rem 1.125rem;
+  color: #24388d;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: 0.0625rem solid #24388d;
 }
 
+.banner-img {
+  animation: shakes 1s ease-in-out infinite alternate;
+}
+@media screen and (max-width: 767px) {
+  .banner-img.cheese {
+    display: none;
+  }
+}
+.banner-img.choco {
+  position: absolute;
+  display: block;
+  width: 225px;
+  top: 212px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.banner-img.choco img {
+  width: 100%;
+}
+
+@keyframes shakes {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, 5%);
+  }
+}
 @media screen and (min-width: 768px) {
   .store {
     position: relative;

@@ -1,5 +1,93 @@
 // 이디야 홈(메인 페이지) 시작 ------------------------------------------------------------- /
-.main {
-  height: 800px;
+// 배너 영역
+
+.banner-area {
+  position: relative;
+  padding-bottom: rem(165px);
+
+  .banner {
+    width: 100%;
+    background-color: $secondaryLightBlue;
+    padding: rem(42px) 0 rem(20px);
+    text-align: center;
+
+    .inner-container {
+      .banner-text:nth-child(1) {
+        font-size: rem(25px);
+        font-weight: 300;
+        line-height: rem(35px);
+
+        em {
+          display: block;
+          font-size: rem(31px);
+          font-weight: 700;
+          color: $primaryBlue;
+          letter-spacing: -1px;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          width: rem(40px);
+          height: rem(1px);
+          background-color: $black;
+          margin: rem(15px) auto;
+          transform: scaleY(-50%);
+        }
+      }
+
+      .banner-text:nth-child(2) {
+        font-size: rem(14px);
+        font-weight: 400;
+        letter-spacing: -0.6px;
+      }
+    }
+
+    // 메뉴 보기
+
+    .btn-menu {
+      display: inline-block;
+      margin-top: rem(15px);
+      padding: rem(8px) rem(18px);
+      color: $primaryBlue;
+      font-size: rem(14px);
+      font-weight: 700;
+      border: rem(1px) solid $primaryBlue;
+    }
+  }
 }
+
+// banner images
+
+.banner-img {
+  animation: shakes 1s ease-in-out infinite alternate;
+  &.cheese {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &.choco {
+    position: absolute;
+    display: block;
+    width: 225px;
+    top: 212px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// shakes 키 프레임
+@keyframes shakes {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, 5%);
+  }
+}
+
 // 이디야 홈(메인 페이지) 종료 ------------------------------------------------------------------ /
