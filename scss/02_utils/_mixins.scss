@@ -1,6 +1,5 @@
 // Float 해제를 위한 clear 스타일 ---------------------------------------------------- /
 
-
 // Auto Margin을 활용한 박스 가운데 정렬 ------------------------------------------------ /
 @mixin autoMargin($marginX: auto) {
   margin-left: $marginX;
@@ -9,12 +8,18 @@
 
 // 요소 박스의 가로 크기를 뷰포트 기준 100vw로 설정 -------------------------------------------- /
 
-
 // 요소 박스의 크기 고정 ----------------------------------------------------------- /
-
 
 @mixin fontDetail($weight, $size, $height) {
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
+}
+
+// 버튼 기본 스타일 제거
+@mixin buttonNone {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: none;
 }

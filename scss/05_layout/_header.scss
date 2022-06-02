@@ -1,3 +1,161 @@
 // 헤더 시작 ------------------------------------------------------------------------ /
 
+// 헤더 네비게이션 스타일
+
+.header {
+  min-width: 320px;
+  position: relative;
+  padding: 18px;
+  border: 1px solid rgba(245, 245, 245, 0.5);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+
+  @include desktop {
+    padding: 14px;
+  }
+
+  .header-inner {
+    @include desktop {
+      max-width: 740px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+// 로고
+
+.logo {
+  width: 140px;
+  height: 14px;
+}
+
+.logo svg {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+// nav
+.nav {
+  // nav 모바일
+  @include mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $grayscaleBlack2;
+
+    .nav-list {
+      padding: 106px 10px 0;
+      color: $grayscaleWhite;
+      font-size: 14px;
+      font-weight: 400;
+
+      .nav-itme {
+        &:first-child {
+          border-top: 1px solid rgba(36, 56, 141, 0.5);
+        }
+        border-bottom: 1px solid rgba(36, 56, 141, 0.5);
+
+        a {
+          display: block;
+          padding: 12px;
+        }
+      }
+    }
+  }
+
+  // nav desktop
+  @include desktop {
+    .nav-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 400;
+      color: $primaryBlue;
+
+      .nav-itme {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+// 메인메뉴 제어 버튼
+
+.button--burger {
+  @include mobile {
+    @include buttonNone;
+    width: 18px;
+    height: 14px;
+    overflow: hidden;
+    transform: translate(0, 0);
+    position: absolute;
+    top: 18px;
+    right: 16px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.button--burgerBarTop,
+.button--burgerBarMiddle,
+.button--burgerBarBottom {
+  @include mobile {
+    position: absolute;
+    background: $grayscaleGray;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    border-radius: 0.25rem;
+  }
+}
+.button--burgerBarTop {
+  @include mobile {
+    position: absolute;
+
+    top: 0;
+  }
+}
+.button--burgerBarMiddle {
+  @include mobile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.button--burgerBarBottom {
+  @include mobile {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+  }
+}
+
+.button--burger span {
+  transition: all 200ms;
+}
+
+.button--burger.is-active .button--burgerBarTop {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.button--burger.is-active .button--burgerBarMiddle {
+  transform: translate(-110%, -50%);
+}
+.button--burger.is-active .button--burgerBarBottom {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
 // 헤더 종료 --------------------------------------------------------------------- /
