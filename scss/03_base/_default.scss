@@ -90,3 +90,15 @@ legend {
 button {
   cursor: pointer;
 }
+
+// container
+.container {
+  min-width: 320px;
+}
+
+// inner container
+
+.inner-container {
+  max-width: 740px;
+  margin: 0 auto;
+}

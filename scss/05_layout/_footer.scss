@@ -1,3 +1,102 @@
 // 푸터 시작 --------------------------------------------------------------------- /
+.footer {
+  background-color: $grayscaleBlack;
+  padding-bottom: 30px;
+}
+
+// footer privacy-list
+
+.privacy-list {
+  display: flex;
+  color: $grayscaleGray;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+  align-items: center;
+
+  @include mobile {
+    padding: 15px 17px 24px;
+
+    .privacy-item {
+      margin: 0 8px 5px;
+    }
+  }
+
+  @include desktop {
+    padding: 20px;
+
+    .privacy-item {
+      margin: 0 10px 0;
+    }
+  }
+
+  .privacy-item:nth-child(2) {
+    color: $grayscaleWhite;
+  }
+}
+
+// footer log
+.footer-log {
+  // log mobile
+  @include mobile {
+    width: 160px;
+    height: auto;
+    margin: 25px auto 0;
+  }
+
+  @include desktop {
+    width: 180px;
+    height: auto;
+    margin: 30px auto 0;
+  }
+}
+
+.address {
+  color: $grayscaleGray2;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 24px;
+  text-align: center;
+
+  .address__content {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  @include mobile {
+    padding: 0 22px;
+
+    .address__content {
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-right: 11px;
+    }
+  }
+
+  @include desktop {
+    padding: 0 64px;
+
+    .address__content {
+      margin-right: 15px;
+    }
+  }
+}
+
+.copyright {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: $grayscaleGray2;
+  text-align: center;
+
+  @include mobile {
+    margin-top: 15px;
+  }
+  @include desktop {
+    margin-top: 20px;
+  }
+}
 
 // 푸터 종료 --------------------------------------------------------------------- /

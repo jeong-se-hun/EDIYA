@@ -600,8 +600,16 @@ button {
   cursor: pointer;
 }
 
-.header {
+.container {
   min-width: 320px;
+}
+
+.inner-container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.header {
   position: relative;
   padding: 18px;
   border: 1px solid rgba(245, 245, 245, 0.5);
@@ -631,49 +639,6 @@ button {
   vertical-align: top;
   width: 100%;
   height: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  .nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #14182c;
-  }
-  .nav .nav-list {
-    padding: 106px 10px 0;
-    color: #fefefe;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .nav .nav-list .nav-itme {
-    border-bottom: 1px solid rgba(36, 56, 141, 0.5);
-  }
-  .nav .nav-list .nav-itme:first-child {
-    border-top: 1px solid rgba(36, 56, 141, 0.5);
-  }
-  .nav .nav-list .nav-itme a {
-    display: block;
-    padding: 12px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav .nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: 400;
-    color: #24388d;
-  }
-  .nav .nav-list .nav-itme {
-    margin-left: 8px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -749,6 +714,151 @@ button {
 .button--burger.is-active .button--burgerBarBottom {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #14182c;
+  }
+  .nav .nav-list {
+    padding: 106px 10px 0;
+    color: #fefefe;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .nav .nav-list .nav-itme {
+    border-bottom: 1px solid rgba(36, 56, 141, 0.5);
+  }
+  .nav .nav-list .nav-itme:first-child {
+    border-top: 1px solid rgba(36, 56, 141, 0.5);
+  }
+  .nav .nav-list .nav-itme a {
+    display: block;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 400;
+    color: #24388d;
+  }
+  .nav .nav-list .nav-itme {
+    margin-left: 8px;
+  }
+}
+
+.footer {
+  background-color: #0f0f0f;
+  padding-bottom: 30px;
+}
+
+.privacy-list {
+  display: flex;
+  color: #616161;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .privacy-list {
+    padding: 15px 17px 24px;
+  }
+  .privacy-list .privacy-item {
+    margin: 0 8px 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .privacy-list {
+    padding: 20px;
+  }
+  .privacy-list .privacy-item {
+    margin: 0 10px 0;
+  }
+}
+.privacy-list .privacy-item:nth-child(2) {
+  color: #fefefe;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-log {
+    width: 160px;
+    height: auto;
+    margin: 25px auto 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-log {
+    width: 180px;
+    height: auto;
+    margin: 30px auto 0;
+  }
+}
+
+.address {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 24px;
+  text-align: center;
+}
+.address .address__content {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  .address {
+    padding: 0 22px;
+  }
+  .address .address__content {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 11px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address {
+    padding: 0 64px;
+  }
+  .address .address__content {
+    margin-right: 15px;
+  }
+}
+
+.copyright {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #878787;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .copyright {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    margin-top: 20px;
+  }
+}
+
+.main {
+  height: 800px;
 }
 
 /*# sourceMappingURL=style.css.map */
