@@ -1,6 +1,7 @@
 // ------ 로그인 시작 ------//
 .main-login {
-  height: 651px;
+  min-height: 651px;
+  height: 100vh;
   text-align: center;
   @include mobile {
     background-image: url(../../images/coffee-mobile.jpg);
