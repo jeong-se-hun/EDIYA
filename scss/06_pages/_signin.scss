@@ -2,13 +2,17 @@
 .main-login {
   min-height: 651px;
   text-align: center;
+
   @include mobile {
-    background: url(../../images/coffee-mobile.jpg) no-repeat -5px -5px;
-    padding-bottom: 25px;
+    background: url(../../images/coffee-mobile.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
   }
 
   @include desktop {
     background: url(../../images/coffee-desktop.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
   }
 }
 
@@ -63,7 +67,8 @@
 }
 
 .email-invalid,
-.pwd-invalid, .pwd-invalid2 {
+.pwd-invalid,
+.pwd-invalid2 {
   display: none;
   margin-top: 10px;
   text-align: left;
@@ -153,7 +158,8 @@
   margin-bottom: rem(30px);
 }
 
-.pwd-invalid, .pwd-invalid2 {
+.pwd-invalid,
+.pwd-invalid2 {
   margin-bottom: 10px;
 }
 

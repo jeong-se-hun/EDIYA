@@ -1512,13 +1512,16 @@ iframe {
 }
 @media screen and (max-width: 767px) {
   .main-login {
-    background: url(../../images/coffee-mobile.jpg) no-repeat -5px -5px;
-    padding-bottom: 25px;
+    background: url(../../images/coffee-mobile.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .main-login {
     background: url(../../images/coffee-desktop.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
   }
 }
 
@@ -1581,7 +1584,8 @@ iframe {
 }
 
 .email-invalid,
-.pwd-invalid, .pwd-invalid2 {
+.pwd-invalid,
+.pwd-invalid2 {
   display: none;
   margin-top: 10px;
   text-align: left;
@@ -1671,7 +1675,8 @@ iframe {
   margin-bottom: 1.875rem;
 }
 
-.pwd-invalid, .pwd-invalid2 {
+.pwd-invalid,
+.pwd-invalid2 {
   margin-bottom: 10px;
 }
 
