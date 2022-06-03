@@ -45,6 +45,7 @@
     overflow: hidden;
     transform: translate(0, 0);
     position: absolute;
+    z-index: 2;
     top: rem(18px);
     right: rem(16px);
   }
