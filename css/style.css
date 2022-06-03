@@ -1548,7 +1548,9 @@ iframe {
   margin-right: auto;
 }
 
-.email, .password, .password2 {
+.email,
+.password,
+.password2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -1559,13 +1561,15 @@ iframe {
   transition: all 0.3s ease;
 }
 
-.email-container, .password-container {
+.email-container,
+.password-container {
   position: relative;
   padding-top: 0.9375rem;
   height: 4.375rem;
 }
 
-.email-invalid, .pwd-invalid {
+.email-invalid,
+.pwd-invalid {
   display: none;
   margin-top: 10px;
   text-align: left;
@@ -1576,7 +1580,9 @@ iframe {
   color: #fefefe;
 }
 
-.warning, .success, .eye {
+.warning,
+.success,
+.eye {
   display: none;
   position: absolute;
   right: 1.25rem;
@@ -1612,7 +1618,8 @@ iframe {
   display: none;
 }
 
-#password, #password2 {
+#password,
+#password2 {
   box-shadow: 0 0.5px #fefefe;
   width: 100%;
   max-width: 33.75rem;
@@ -1633,11 +1640,13 @@ iframe {
   left: 15px;
 }
 
-#password:focus, #password2:focus {
+#password:focus,
+#password2:focus {
   transition: all 0.5s ease;
   box-shadow: 0 2px #fefefe;
 }
-#password:focus ~ .eye, #password2:focus ~ .eye {
+#password:focus ~ .eye,
+#password2:focus ~ .eye {
   display: block;
 }
 
