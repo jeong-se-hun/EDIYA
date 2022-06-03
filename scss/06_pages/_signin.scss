@@ -4,14 +4,12 @@
   text-align: center;
 
   @include mobile {
-    background: url(../../images/coffee-mobile.jpg) no-repeat;
-    background-size: cover;
+    background: url(../../images/coffee-mobile.jpg) no-repeat center / cover;
     padding-bottom: 30px;
   }
 
   @include desktop {
-    background: url(../../images/coffee-desktop.jpg) no-repeat;
-    background-size: cover;
+    background: url(../../images/coffee-desktop.jpg) no-repeat center / cover;
     padding-bottom: 40px;
   }
 }

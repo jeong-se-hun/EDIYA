@@ -1512,15 +1512,13 @@ iframe {
 }
 @media screen and (max-width: 767px) {
   .main-login {
-    background: url(../../images/coffee-mobile.jpg) no-repeat;
-    background-size: cover;
+    background: url(../../images/coffee-mobile.jpg) no-repeat center/cover;
     padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .main-login {
-    background: url(../../images/coffee-desktop.jpg) no-repeat;
-    background-size: cover;
+    background: url(../../images/coffee-desktop.jpg) no-repeat center/cover;
     padding-bottom: 40px;
   }
 }
