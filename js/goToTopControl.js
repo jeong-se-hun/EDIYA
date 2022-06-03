@@ -1,8 +1,8 @@
 /* DOM 스크립트 코드 -------------------------------------------------------------- */
 
-(function gotoTopControl(global){
+(function gotoTopControl(global) {
   'use strict';
-  
+
   var displayTop = 100;
   var bodyNode = null;
   var buttonNode = null;
@@ -11,7 +11,7 @@
 
   function main() {
     bodyNode = global.document.body;
-    buttonNode = document.querySelector('.buttonGoToTop');
+    buttonNode = document.querySelector('.top-scroll-container');
     buttonNodeDisplayValue = getComputedStyle(buttonNode, null).display;
     buttonNode.addEventListener('click', handleGoToTop);
     handleDisplayGoToTop();
@@ -31,7 +31,6 @@
 
   global.addEventListener('DOMContentLoaded', main);
   global.addEventListener('scroll', handleDisplayGoToTop);
-
 })(window);
 
 /* 객체 지향 JavaScript 코드 ------------------------------------------------------ */
@@ -40,7 +39,7 @@
   'use strict';
 
   function init() {
-    var appHeader = document.querySelector('.header');
+    var appHeader = document.querySelector('header');
 
     new GoToTop({
       targetTop: appHeader.getBoundingClientRect().bottom,
@@ -48,4 +47,4 @@
   }
 
   window.addEventListener('DOMContentLoaded', init);
-}) //();
+});
