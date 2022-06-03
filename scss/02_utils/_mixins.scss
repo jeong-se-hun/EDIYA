@@ -1,5 +1,6 @@
-// Float 해제를 위한 clear 스타일 ---------------------------------------------------- /
+@use 'sass:math';
 
+// Float 해제를 위한 clear 스타일 ---------------------------------------------------- /
 // Auto Margin을 활용한 박스 가운데 정렬 ------------------------------------------------ /
 @mixin autoMargin($marginX: auto) {
   margin-left: $marginX;
@@ -28,4 +29,19 @@
   font-size: $size;
   line-height: $height;
   color: $color;
+}
+
+// iframe
+@mixin respondIframe($w: 16, $h: 9) {
+  position: relative;
+  padding-top: math.div($h, $w) * 100%;
+  height: 0 !important;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

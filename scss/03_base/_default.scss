@@ -13,6 +13,8 @@ body *,
 body *::before,
 body *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 // 탭 하이라이트 색상 설정 ------------------------------------------------------------- /
@@ -101,4 +103,11 @@ button {
 .inner-container {
   max-width: 740px;
   margin: 0 auto;
+}
+
+// 비디오 기본
+video,
+iframe {
+  width: 100%;
+  height: auto;
 }

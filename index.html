@@ -24,7 +24,7 @@
       <header class="header">
         <div class="header-inner inner-container">
           <h1 class="logo">
-            <a href="logo-link">
+            <a href="./index.html">
               <svg
                 width="300"
                 height="29"
@@ -96,7 +96,7 @@
                 <a href="#" class="nav-link">이디아 뉴스</a>
               </li>
               <li class="nav-itme">
-                <a href="#" class="nav-link">매장 찾기</a>
+                <a href="./views/store.html" class="nav-link">매장 찾기</a>
               </li>
             </ul>
           </nav>
@@ -107,7 +107,152 @@
           </button>
         </div>
       </header>
-      <main class="main"></main>
+
+      <main class="main">
+        <section class="banner-area">
+          <h2 class="a11yHidden">배너 영역</h2>
+          <div class="banner">
+            <div class="inner-container">
+              <p class="banner-text">ALWAYS BESIDE YOU <em>EDIYA COFFEE</em></p>
+              <p class="banner-text">
+                늘 당신 곁에, 이디야 커피의 새로운 메뉴를 맛보세요.
+              </p>
+
+              <span class="banner-img cheese">
+                <img src="./images/cheese-cookie-img.png" alt="치즈 쉐이크" />
+              </span>
+              <span class="banner-img choco">
+                <img src="./images/choco-rice-img.png" alt="초코 쉐이크" />
+              </span>
+            </div>
+            <a href="/" class="btn btn-menu">메뉴 보기</a>
+          </div>
+        </section>
+
+        <section class="promotion">
+          <h2 class="a11yHidden">프로모션 영역</h2>
+
+          <div class="inner-container">
+            <figure class="promotion-video">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/UGPo0RqhbKU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <figcaption class="a11yHidden" id="ediyaYoutube">
+                이디아커피 고객감사 영상
+              </figcaption>
+            </figure>
+
+            <div class="announcement">
+              <div class="notice">
+                <div class="notice-control">
+                  <h3>NOTICE</h3>
+                  <div class="control-button-aria">
+                    <button class="btn btn-prev">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <title>이전 공지사항 보기</title>
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="15"
+                          height="15"
+                          stroke="#F5F5F5"
+                        ></rect>
+                        <path
+                          d="M9.25 10.5L6.75 8L9.25 5.5"
+                          stroke="#F5F5F5"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button class="btn btn-next">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <title>다음 공지사항 보기</title>
+                        <rect
+                          x="-0.5"
+                          y="0.5"
+                          width="15"
+                          height="15"
+                          transform="matrix(-1 0 0 1 15 0)"
+                          stroke="#F5F5F5"
+                        ></rect>
+                        <path
+                          d="M6.75 10.5L9.25 8L6.75 5.5"
+                          stroke="#F5F5F5"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <ul class="notice-content-list">
+                  <li class="notice-content-item">
+                    <h4 class="content-title">이디야멤버스가 새로워집니다.</h4>
+                    <time class="content-time" datetime="2022-06-03"
+                      >2022.06.03</time
+                    >
+                    <p class="content-description">
+                      이디야멤버스에 새로운 기능이 추가됩니다. 추가되는
+                      고객등급제, 이디야카드, 스마트 ...
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="news">
+                <h3>NEWS</h3>
+
+                <ul class="news-list">
+                  <li class="news-item">
+                    <a href="#"
+                      ><span>[MTN] 이디야커피, 조각 케이크 2종 출시 …</span>
+                      <time datetime="2022-06-01">2022.06.01</time></a
+                    >
+                  </li>
+                  <li class="news-item">
+                    <a href="#"
+                      ><span
+                        >[아시아 경제] 이디야커피, '비니스트 커피믹스 …</span
+                      >
+                      <time datetime="2022-05-20">2022.05.20</time></a
+                    >
+                  </li>
+                </ul>
+
+                <a href="#" class="news-more" aria-label="이디아 뉴스 더보기">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="15"
+                      height="15"
+                      stroke="#F5F5F5"
+                    ></rect>
+                    <path
+                      d="M5 8.02114H11M8.05331 5L8.05331 11"
+                      stroke="#F5F5F5"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <footer class="footer">
         <ul class="privacy-list" aria-label="">
