@@ -11,6 +11,13 @@
 
 // 요소 박스의 크기 고정 ----------------------------------------------------------- /
 
+
+@mixin fontDetail($weight, $size, $height, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
 @mixin fontDetail($weight, $size, $height) {
   font-weight: $weight;
   font-size: $size;

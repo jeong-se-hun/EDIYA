@@ -93,6 +93,11 @@ button {
   cursor: pointer;
 }
 
+input {
+  background: none;
+  outline: 0;
+  border: transparent;
+}
 // container
 .container {
   min-width: 320px;
