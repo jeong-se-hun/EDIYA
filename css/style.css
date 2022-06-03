@@ -858,7 +858,7 @@ button {
 }
 
 .banner-area {
-  position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .banner-area {
@@ -884,6 +884,9 @@ button {
   .banner-area .banner {
     padding: 3.125rem 0 2.25rem;
   }
+}
+.banner-area .banner .inner-container {
+  position: relative;
 }
 .banner-area .banner .inner-container .banner-text:nth-child(1) {
   font-weight: 250;
@@ -953,8 +956,8 @@ button {
   .banner-img.cheese {
     position: absolute;
     display: block;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -2px;
+    left: -64px;
     width: 306px;
   }
   .banner-img.cheese img {
@@ -965,20 +968,40 @@ button {
   position: absolute;
   display: block;
   width: 225px;
-  top: 212px;
-  left: 50%;
+  top: 175px;
+  left: 52%;
   transform: translate(-50%, 0);
+}
+@media screen and (min-width: 768px) {
+  .banner-img.choco {
+    top: 81px;
+    transform: translate(0);
+    left: 454px;
+    width: 457px;
+  }
 }
 .banner-img.choco img {
   width: 100%;
 }
 
-@keyframes shakes {
-  0% {
-    transform: translate(-50%, 0);
+@media screen and (max-width: 767px) {
+  @keyframes shakes {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(-50%, 4%);
+    }
   }
-  100% {
-    transform: translate(-50%, 5%);
+}
+@media screen and (min-width: 768px) {
+  @keyframes shakes {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 4%);
+    }
   }
 }
 @media screen and (min-width: 768px) {

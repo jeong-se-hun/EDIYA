@@ -2,7 +2,7 @@
 // 배너 영역
 
 .banner-area {
-  position: relative;
+  overflow: hidden;
 
   @include mobile {
     padding-bottom: rem(165px);
@@ -26,6 +26,8 @@
     }
 
     .inner-container {
+      position: relative;
+
       .banner-text:nth-child(1) {
         font-weight: 250;
 
@@ -99,9 +101,8 @@
     @include desktop {
       position: absolute;
       display: block;
-      top: 50%;
-      transform: translateY(-50%);
-
+      top: -2px;
+      left: -64px;
       width: 306px;
 
       img {
@@ -114,9 +115,16 @@
     position: absolute;
     display: block;
     width: 225px;
-    top: 212px;
-    left: 50%;
+    top: 175px;
+    left: 52%;
     transform: translate(-50%, 0);
+
+    @include desktop {
+      top: 81px;
+      transform: translate(0);
+      left: 454px;
+      width: 457px;
+    }
 
     img {
       width: 100%;
@@ -124,13 +132,29 @@
   }
 }
 
-// shakes 키 프레임
-@keyframes shakes {
-  0% {
-    transform: translate(-50%, 0);
+// shakes 모바일 키 프레임
+
+@include mobile {
+  @keyframes shakes {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(-50%, 4%);
+    }
   }
-  100% {
-    transform: translate(-50%, 5%);
+}
+
+// shakes desktop 키 프레임
+
+@include desktop {
+  @keyframes shakes {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 4%);
+    }
   }
 }
 
