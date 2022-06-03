@@ -1500,17 +1500,17 @@ iframe {
   opacity: 0.7;
 }
 
-.main {
+.main-login {
   height: 651px;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .main {
+  .main-login {
     background-image: url(../../images/coffee-mobile.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .main {
+  .main-login {
     background-image: url(../../images/coffee-desktop.jpg);
   }
 }
