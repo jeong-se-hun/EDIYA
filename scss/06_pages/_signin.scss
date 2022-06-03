@@ -1,14 +1,14 @@
 // ------ 로그인 시작 ------//
 .main-login {
   min-height: 651px;
-  height: 100vh;
   text-align: center;
   @include mobile {
-    background-image: url(../../images/coffee-mobile.jpg);
+    background: url(../../images/coffee-mobile.jpg) no-repeat -5px -5px;
+    padding-bottom: 25px;
   }
 
   @include desktop {
-    background-image: url(../../images/coffee-desktop.jpg);
+    background: url(../../images/coffee-desktop.jpg) no-repeat;
   }
 }
 
