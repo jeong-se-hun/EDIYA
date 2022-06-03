@@ -11,6 +11,11 @@
   }
 }
 
+.main2 {
+  height: 651px;
+  text-align: center;
+}
+
 .welcome-section {
   padding: rem(100px) 0;
 }
@@ -57,7 +62,7 @@
 }
 
 .email-invalid,
-.pwd-invalid {
+.pwd-invalid, .pwd-invalid2 {
   display: none;
   margin-top: 10px;
   text-align: left;
@@ -147,7 +152,7 @@
   margin-bottom: rem(30px);
 }
 
-.pwd-invalid {
+.pwd-invalid, .pwd-invalid2 {
   margin-bottom: 10px;
 }
 
