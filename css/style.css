@@ -1085,6 +1085,7 @@ iframe {
   max-height: 1.75rem;
 }
 .announcement .news {
+  position: relative;
   padding: 0.9375rem;
   background-color: #24388d;
   color: #fefefe;
@@ -1110,6 +1111,11 @@ iframe {
 }
 .announcement .news .news-list .news-item a time {
   font-size: 12px;
+}
+.announcement .news .news-more {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 @media screen and (min-width: 768px) {

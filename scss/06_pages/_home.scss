@@ -241,6 +241,7 @@
   // news
 
   .news {
+    position: relative;
     padding: rem(15px);
     background-color: $primaryBlue;
     color: $grayscaleWhite;
@@ -269,6 +270,12 @@
           font-size: 12px;
         }
       }
+    }
+
+    .news-more {
+      position: absolute;
+      top: 15px;
+      right: 15px;
     }
   }
 }
