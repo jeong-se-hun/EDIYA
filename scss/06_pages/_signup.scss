@@ -1,3 +1,19 @@
 // 회원 가입 시작 ---------------------------------------------------------- /
 
+.main {
+  background: none;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  // object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+}
+
 // 회원 가입 종료 ---------------------------------------------------------- /
