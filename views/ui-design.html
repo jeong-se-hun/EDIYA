@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UI 디자인 ← 이디야 커피(Ediya Coffee)</title>
-    <meta name="description" content="이디야 커피 브랜드 사이트 (학습용) UI 디자인 페이지입니다." />
-    <meta name="keywords" content="이디야, 커피, 브랜드, 사이트, 학습용, UI 디자인, 이듬, 블렌디드 러닝" />
+    <meta
+      name="description"
+      content="이디야 커피 브랜드 사이트 (학습용) UI 디자인 페이지입니다."
+    />
+    <meta
+      name="keywords"
+      content="이디야, 커피, 브랜드, 사이트, 학습용, UI 디자인, 이듬, 블렌디드 러닝"
+    />
     <meta name="author" content="이듬(E.UID)" />
 
     <!-- 
@@ -18,8 +23,16 @@
     <link rel="preconnect" href="//spoqa.github.io" />
     <link rel="preconnect" href="//www.figma.com" />
     <link rel="preconnect" href="//cdnjs.cloudflare.com" />
-    <link rel="preload" as="style" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" />
-    <link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link
+      rel="preload"
+      as="style"
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="preload" as="style" href="../css/style.css" />
     <link rel="preload" as="script" href="../js/utils/dom.js" />
     <link rel="preload" as="script" href="../js/navigationControl.js" />
@@ -37,12 +50,20 @@
     <link rel="prefetch" as="image" href="../images/icon-checked.svg" />
     <link rel="prefetch" as="image" href="../images/coffee-desktop.jpg" />
     <link rel="prefetch" as="image" href="../images/coffee-mobile.jpg" />
-    <link rel="prefetch" as="image" href="../media/coffee-latte-art-cover.png" />
+    <link
+      rel="prefetch"
+      as="image"
+      href="../media/coffee-latte-art-cover.png"
+    />
     <link rel="prefetch" as="video" href="../media/coffee-latte-art.mp4" />
 
     <!-- 스타일링 -->
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
 
     <!-- 스크립트: 즉시 실행 -->
     <script src="../js/utils/dom.js"></script>
@@ -56,33 +77,62 @@
     <!-- 스크립트: DOM 콘텐츠 준비 이후 실행 -->
     <script src="../js/navigationControl.js" defer></script>
     <script src="../js/goToTopControl.js" defer></script>
-
   </head>
 
   <body>
-
     <script src="../js/landingControl.js"></script>
 
     <div class="ediya">
       <header class="header">
         <div class="header__inner">
           <h1 class="header__logo">
-            <a href="../index.html"><img src="../images/brand.svg" alt="Ediya Coffee" class="responsiveImg" /></a>
+            <a href="../index.html"
+              ><img
+                src="../images/brand.svg"
+                alt="Ediya Coffee"
+                class="responsiveImg"
+            /></a>
           </h1>
-          <button type="button" class="buttonNone buttonBurger" aria-label="메뉴 열기" title="메뉴 열기">
+          <button
+            type="button"
+            class="buttonNone buttonBurger"
+            aria-label="메뉴 열기"
+            title="메뉴 열기"
+          >
             <span class="icon iconBurger"></span>
           </button>
           <nav class="navigation">
             <h2 class="a11yHidden">메인 메뉴</h2>
             <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link" href="./signin.html">로그인</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="./signup.html">회원 가입</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="./ui-design.html">이디야 디자인</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="./beverages.html">이디야 음료</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="./news.html">이디야 뉴스</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="./store.html">매장 찾기</a></li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./signin.html">로그인</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./signup.html">회원 가입</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./ui-design.html"
+                  >이디야 디자인</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./beverages.html"
+                  >이디야 음료</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./news.html">이디야 뉴스</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./store.html">매장 찾기</a>
+              </li>
             </ul>
-            <button type="button" class="buttonNone buttonClose" title="닫기" aria-label="메인 메뉴 닫기">
+            <button
+              type="button"
+              class="buttonNone buttonClose"
+              title="닫기"
+              aria-label="메인 메뉴 닫기"
+            >
               <span class="icon iconClose" aria-hidden="true"></span>
             </button>
           </nav>
@@ -95,23 +145,41 @@
       <div class="ui-design-group" role="group">
         <article class="figma-embed-wrapper">
           <h3 class="figma-embed-title">이디야 커피 사이트 디자인 (학습용)</h3>
-          <iframe title="이디야 커피 사이트 디자인 (학습용)" class="figma-embed" src="//bit.ly/3czOnuu" allowfullscreen></iframe>
-
+          <iframe
+            title="이디야 커피 사이트 디자인 (학습용)"
+            class="figma-embed"
+            src="//bit.ly/3czOnuu"
+            allowfullscreen
+          ></iframe>
         </article>
         <article class="figma-embed-wrapper">
           <h3 class="figma-embed-title">모바일 UI</h3>
-          <iframe title="이디야 모바일 UI" class="figma-embed" src="//bit.ly/2S2k5al" allowfullscreen></iframe>
+          <iframe
+            title="이디야 모바일 UI"
+            class="figma-embed"
+            src="//bit.ly/2S2k5al"
+            allowfullscreen
+          ></iframe>
         </article>
         <article class="figma-embed-wrapper">
           <h3 class="figma-embed-title">태블릿/데스크탑 UI</h3>
-          <iframe title="이디야 태블릿/데스크탑 UI" class="figma-embed" src="//bit.ly/33VzIWw" allowfullscreen></iframe>
+          <iframe
+            title="이디야 태블릿/데스크탑 UI"
+            class="figma-embed"
+            src="//bit.ly/33VzIWw"
+            allowfullscreen
+          ></iframe>
         </article>
         <article class="figma-embed-wrapper">
           <h3 class="figma-embed-title">디자인 시스템</h3>
-          <iframe title="이디야 디자인 시스템" class="figma-embed" src="//bit.ly/3kRPloV" allowfullscreen></iframe>
+          <iframe
+            title="이디야 디자인 시스템"
+            class="figma-embed"
+            src="//bit.ly/3kRPloV"
+            allowfullscreen
+          ></iframe>
         </article>
       </div>
-
     </main>
     <footer class="footer">
       <div class="footer__inner">
@@ -120,28 +188,69 @@
         </div>
         <div class="privacy">
           <ul class="privacy__list">
-            <li class="privacy__item"><a class="privacy__link" href="#">개인정보처리방침</a></li>
-            <li class="privacy__item"><a class="privacy__link" href="#">멤버스 이용약관</a></li>
-            <li class="privacy__item"><a class="privacy__link" href="#">가맹 안내</a></li>
-            <li class="privacy__item"><a class="privacy__link" href="#">대량쿠폰구매</a></li>
-            <li class="privacy__item"><a class="privacy__link" href="#">채용안내</a></li>
-            <li class="privacy__item"><a class="privacy__link" href="#">고객의 소리</a></li>
-            <li class="privacy__item"><a class="privacy__link" href="#">사이트맵</a></li>
-            <li class="privacy__item"><a class="privacy__link" href="#">점주의 방</a></li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">개인정보처리방침</a>
+            </li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">멤버스 이용약관</a>
+            </li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">가맹 안내</a>
+            </li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">대량쿠폰구매</a>
+            </li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">채용안내</a>
+            </li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">고객의 소리</a>
+            </li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">사이트맵</a>
+            </li>
+            <li class="privacy__item">
+              <a class="privacy__link" href="#">점주의 방</a>
+            </li>
           </ul>
         </div>
         <address class="address">
-          <span class="address__content">서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span>
+          <span class="address__content"
+            >서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동
+            221-17)</span
+          >
           <span class="address__content"><b>TEL : </b>02-543-6467</span>
           <span class="address__content"><b>FAX : </b>02-543-7191</span>
-          <span class="address__content"><b>사업자등록번호 : </b>107-86-16302</span>
-          <span class="address__content"><b>통신판매업 신고 : </b>강남 제 002519호</span>
+          <span class="address__content"
+            ><b>사업자등록번호 : </b>107-86-16302</span
+          >
+          <span class="address__content"
+            ><b>통신판매업 신고 : </b>강남 제 002519호</span
+          >
           <span class="address__content"><b>대표이사 : </b>문창기</span>
         </address>
-        <small class="copyright">&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</small>
+        <small class="copyright"
+          >&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</small
+        >
       </div>
     </footer>
-
+    <div class="top-scroll-container">
+      <button class="top-scroll-button" type="button">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="25" cy="25" r="25" fill="#C8CDE2" />
+          <path
+            d="M25 38C25.6072 38 26.1 37.5147 26.1 36.9167V15.3047L34.1037 23.5803C34.3198 23.804 34.6097 23.9167 34.9001 23.9167C35.1723 23.9167 35.4457 23.8175 35.6585 23.6177C36.0985 23.2049 36.1156 22.5192 35.6965 22.0858L26.556 12.6348C26.1402 12.2259 25.588 12 25 12C24.412 12 23.8598 12.2259 23.4259 12.6538L14.3035 22.0864C13.8844 22.5197 13.9015 23.2055 14.3415 23.6182C14.7815 24.031 15.4783 24.0142 15.8969 23.5808L23.9 15.2706V36.9167C23.9 37.5147 24.3928 38 25 38Z"
+            fill="#0F0F0F"
+          />
+        </svg>
+      </button>
+    </div>
+    <script src="../js/goToTopControl.js"></script>
   </body>
-
 </html>
