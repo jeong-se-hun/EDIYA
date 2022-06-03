@@ -158,10 +158,119 @@
   }
 }
 
-// promotion
+// promotion 영역 ----------------------
 
-.promotion-video {
-  @include respondIframe;
+.promotion {
+  // .promotion-video
+
+  .promotion-video {
+    @include respondIframe;
+  }
+}
+
+// announcement
+.announcement {
+  // notice
+  .notice {
+    display: flex;
+    min-width: rem(320px);
+    min-height: rem(115px);
+
+    .notice-control {
+      position: relative;
+      width: rem(125px);
+      background: $gradientBlue;
+      color: $grayscaleWhite;
+      font-weight: 700;
+      font-size: rem(16px);
+      padding: rem(15px);
+      flex-shrink: 0;
+
+      .control-button-aria {
+        position: absolute;
+        left: rem(84px);
+        top: rem(89px);
+        display: flex;
+
+        .btn {
+          appearance: none;
+          border: 0;
+          background-color: inherit;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    .notice-content-list {
+      padding: rem(15px);
+      width: 66.67%;
+      min-width: rem(195px);
+
+      .content-title {
+        color: $primaryBlue;
+        font-weight: 700;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: rem(20px);
+        white-space: nowrap;
+      }
+
+      .content-time {
+        font-size: 12px;
+        font-weight: 400;
+        color: $grayscaleGray;
+        margin-top: 5px;
+        min-width: 230px;
+      }
+
+      .content-description {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        color: $grayscaleDarkGray;
+        margin-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: rem(28px);
+      }
+    }
+  }
+
+  // news
+
+  .news {
+    padding: rem(15px);
+    background-color: $primaryBlue;
+    color: $grayscaleWhite;
+
+    h3 {
+      font-size: rem(16px);
+      font-weight: 700;
+    }
+    .news-list {
+      margin-top: 15px;
+
+      .news-item a {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        margin-top: 3px;
+
+        span {
+          font-size: 13px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        time {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 
 // 이디야 홈(메인 페이지) 종료 ------------------------------------------------------------------ /
