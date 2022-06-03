@@ -609,6 +609,12 @@ button {
   margin: 0 auto;
 }
 
+video,
+iframe {
+  width: 100%;
+  height: auto;
+}
+
 .header {
   position: relative;
   padding: 1.125rem;
@@ -1004,6 +1010,19 @@ button {
     }
   }
 }
+.promotion-video {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0 !important;
+}
+.promotion-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .store {
     position: relative;
