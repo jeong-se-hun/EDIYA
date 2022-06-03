@@ -88,8 +88,7 @@ main {
  */
 code,
 kbd,
-samp,
-pre {
+samp, pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
@@ -286,17 +285,17 @@ select {
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-html [type='button'],
-[type='reset'],
-[type='submit'] {
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
   /* 2 */
 }
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   /**
    * Remove the inner border and padding in Firefox.
    */
@@ -305,16 +304,16 @@ button,
    */
 }
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -329,8 +328,8 @@ input {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type='checkbox'],
-[type='radio'] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -340,8 +339,8 @@ input {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -349,7 +348,7 @@ input {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -358,8 +357,7 @@ input {
    * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
    */
 }
-[type='search']::-webkit-search-cancel-button,
-[type='search']::-webkit-search-decoration {
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -491,36 +489,28 @@ template {
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Spoqa Han Sans";
   font-weight: 700;
   font-display: swap;
-  src: local('Spoqa Han Sans Bold'),
-    url('../fonts/SpoqaHanSansBold.woff2') format('woff2'),
-    url('../fonts/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff');
+  src: local("Spoqa Han Sans Bold"), url("../fonts/SpoqaHanSansBold.woff2") format("woff2"), url("../fonts/SpoqaHanSans/SpoqaHanSansBold.woff") format("woff");
 }
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Spoqa Han Sans";
   font-weight: 400;
   font-display: swap;
-  src: local('Spoqa Han Sans Regular'),
-    url('../fonts/SpoqaHanSansRegular.woff2') format('woff2'),
-    url('../fonts/SpoqaHanSansRegular.woff') format('woff');
+  src: local("Spoqa Han Sans Regular"), url("../fonts/SpoqaHanSansRegular.woff2") format("woff2"), url("../fonts/SpoqaHanSansRegular.woff") format("woff");
 }
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Spoqa Han Sans";
   font-weight: 300;
   font-display: swap;
-  src: local('Spoqa Han Sans Light'),
-    url('../fonts/SpoqaHanSansLight.woff2') format('woff2'),
-    url('../fonts/SpoqaHanSansLight.woff') format('woff');
+  src: local("Spoqa Han Sans Light"), url("../fonts/SpoqaHanSansLight.woff2") format("woff2"), url("../fonts/SpoqaHanSansLight.woff") format("woff");
 }
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: "Spoqa Han Sans";
   font-weight: 100;
   font-display: swap;
-  src: local('Spoqa Han Sans Thin'),
-    url('../fonts/SpoqaHanSansThin.woff2') format('woff2'),
-    url('../fonts/SpoqaHanSansThin.woff') format('woff');
+  src: local("Spoqa Han Sans Thin"), url("../fonts/SpoqaHanSansThin.woff2") format("woff2"), url("../fonts/SpoqaHanSansThin.woff") format("woff");
 }
 .a11yHidden {
   overflow: hidden;
@@ -557,7 +547,7 @@ body * {
 }
 
 body {
-  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-family: "Spoqa Han Sans", "Sans-serif";
   font-size: inherit;
   background-color: #fff;
 }
@@ -688,8 +678,8 @@ iframe {
 
 @media screen and (max-width: 767px) {
   .button--burgerBarTop,
-  .button--burgerBarMiddle,
-  .button--burgerBarBottom {
+.button--burgerBarMiddle,
+.button--burgerBarBottom {
     position: absolute;
     background: #616161;
     left: 0;
@@ -936,7 +926,7 @@ iframe {
   }
 }
 .banner-area .banner .inner-container .banner-text:nth-child(1)::after {
-  content: '';
+  content: "";
   display: block;
   width: 2.5rem;
   height: 0.0625rem;
@@ -1243,7 +1233,7 @@ iframe {
   line-height: 0.8125rem;
   color: #24388d;
 }
-.store-search-tab button[aria-selected='true'] {
+.store-search-tab button[aria-selected=true] {
   background-color: #24388d;
   font-weight: 700;
   font-size: 0.8125rem;
@@ -1425,7 +1415,7 @@ iframe {
   color: #616161;
 }
 .beverage-eng-name::after {
-  content: '';
+  content: "";
   width: 100%;
   display: block;
   margin: 16px 0 10px;
@@ -1509,17 +1499,18 @@ iframe {
   background-color: transparent;
   opacity: 0.7;
 }
-.main {
+
+.main-login {
   height: 651px;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .main {
+  .main-login {
     background-image: url(../../images/coffee-mobile.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .main {
+  .main-login {
     background-image: url(../../images/coffee-desktop.jpg);
   }
 }
@@ -1557,9 +1548,7 @@ iframe {
   margin-right: auto;
 }
 
-.email,
-.password,
-.password2 {
+.email, .password, .password2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -1570,15 +1559,13 @@ iframe {
   transition: all 0.3s ease;
 }
 
-.email-container,
-.password-container {
+.email-container, .password-container {
   position: relative;
   padding-top: 0.9375rem;
   height: 4.375rem;
 }
 
-.email-invalid,
-.pwd-invalid {
+.email-invalid, .pwd-invalid {
   display: none;
   margin-top: 10px;
   text-align: left;
@@ -1589,9 +1576,7 @@ iframe {
   color: #fefefe;
 }
 
-.warning,
-.success,
-.eye {
+.warning, .success, .eye {
   display: none;
   position: absolute;
   right: 1.25rem;
@@ -1627,8 +1612,7 @@ iframe {
   display: none;
 }
 
-#password,
-#password2 {
+#password, #password2 {
   box-shadow: 0 0.5px #fefefe;
   width: 100%;
   max-width: 33.75rem;
@@ -1649,13 +1633,11 @@ iframe {
   left: 15px;
 }
 
-#password:focus,
-#password2:focus {
+#password:focus, #password2:focus {
   transition: all 0.5s ease;
   box-shadow: 0 2px #fefefe;
 }
-#password:focus ~ .eye,
-#password2:focus ~ .eye {
+#password:focus ~ .eye, #password2:focus ~ .eye {
   display: block;
 }
 
