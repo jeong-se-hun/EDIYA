@@ -859,25 +859,54 @@ button {
 
 .banner-area {
   position: relative;
-  padding-bottom: 10.3125rem;
+}
+@media screen and (max-width: 767px) {
+  .banner-area {
+    padding-bottom: 10.3125rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner-area {
+    padding-bottom: 16.25rem;
+  }
 }
 .banner-area .banner {
   width: 100%;
   background-color: #bae5fb;
-  padding: 2.625rem 0 1.25rem;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .banner-area .banner {
+    padding: 2.625rem 0 1.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner-area .banner {
+    padding: 3.125rem 0 2.25rem;
+  }
+}
 .banner-area .banner .inner-container .banner-text:nth-child(1) {
-  font-size: 1.5625rem;
-  font-weight: 300;
-  line-height: 2.1875rem;
+  font-weight: 250;
+}
+@media screen and (max-width: 767px) {
+  .banner-area .banner .inner-container .banner-text:nth-child(1) {
+    font-size: 1.5625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner-area .banner .inner-container .banner-text:nth-child(1) {
+    font-size: 1.9375rem;
+  }
 }
 .banner-area .banner .inner-container .banner-text:nth-child(1) em {
-  display: block;
   font-size: 1.9375rem;
   font-weight: 700;
   color: #24388d;
-  letter-spacing: -1px;
+}
+@media screen and (max-width: 767px) {
+  .banner-area .banner .inner-container .banner-text:nth-child(1) em {
+    display: block;
+  }
 }
 .banner-area .banner .inner-container .banner-text:nth-child(1)::after {
   content: "";
@@ -888,10 +917,14 @@ button {
   margin: 0.9375rem auto;
   transform: scaleY(-50%);
 }
+@media screen and (min-width: 768px) {
+  .banner-area .banner .inner-container .banner-text:nth-child(1)::after {
+    margin: 1.875rem auto;
+  }
+}
 .banner-area .banner .inner-container .banner-text:nth-child(2) {
   font-size: 0.875rem;
   font-weight: 400;
-  letter-spacing: -0.6px;
 }
 .banner-area .banner .btn-menu {
   display: inline-block;
@@ -902,6 +935,11 @@ button {
   font-weight: 700;
   border: 0.0625rem solid #24388d;
 }
+@media screen and (min-width: 768px) {
+  .banner-area .banner .btn-menu {
+    padding: 0.5rem 1.5rem;
+  }
+}
 
 .banner-img {
   animation: shakes 1s ease-in-out infinite alternate;
@@ -909,6 +947,18 @@ button {
 @media screen and (max-width: 767px) {
   .banner-img.cheese {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner-img.cheese {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 306px;
+  }
+  .banner-img.cheese img {
+    width: 100%;
   }
 }
 .banner-img.choco {
