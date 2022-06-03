@@ -48,6 +48,7 @@
     z-index: 2;
     top: rem(18px);
     right: rem(16px);
+    cursor: position;
   }
 
   @include desktop {

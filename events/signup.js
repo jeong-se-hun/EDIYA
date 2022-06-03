@@ -83,6 +83,15 @@ const pwdVal = () => {
   }
 }
 
+const pwdVal2 = () => {
+  if (pwd_input2.value !== pwd_input.value) {
+    document.querySelector('.pwd-invalid2').style.display = 'block';
+  }
+  else {
+    document.querySelector('.pwd-invalid2').style.display = 'none';    
+  }
+}
+
 email_input.addEventListener('click', () => labelHoldE(email_input));
 pwd_input.addEventListener('click', () => labelHoldP(pwd_input));
 pwd_input2.addEventListener('click', () => labelHoldP2(pwd_input2));
@@ -91,4 +100,5 @@ email_input.addEventListener('keyup', () => checkValE());
 pwd_input2.addEventListener('keyup', () => loginActive());
 pwd_input.addEventListener('keyup', () => pwdVal());
 login_btn.addEventListener('click', () => location.href="/index.html");
+pwd_input2.addEventListener('keyup', () => pwdVal2());
 

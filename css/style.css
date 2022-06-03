@@ -669,6 +669,7 @@ iframe {
     z-index: 2;
     top: 1.125rem;
     right: 1rem;
+    cursor: position;
   }
 }
 @media screen and (min-width: 768px) {
@@ -781,6 +782,7 @@ iframe {
 .footer {
   background-color: #0f0f0f;
   padding-bottom: 1.875rem;
+  margin-top: 50px;
 }
 
 .privacy-list {
@@ -1520,6 +1522,11 @@ iframe {
   }
 }
 
+.main2 {
+  height: 651px;
+  text-align: center;
+}
+
 .welcome-section {
   padding: 6.25rem 0;
 }
@@ -1574,7 +1581,7 @@ iframe {
 }
 
 .email-invalid,
-.pwd-invalid {
+.pwd-invalid, .pwd-invalid2 {
   display: none;
   margin-top: 10px;
   text-align: left;
@@ -1664,7 +1671,7 @@ iframe {
   margin-bottom: 1.875rem;
 }
 
-.pwd-invalid {
+.pwd-invalid, .pwd-invalid2 {
   margin-bottom: 10px;
 }
 
