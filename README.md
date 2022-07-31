@@ -1,14 +1,5 @@
 # EDIYA (Sass 버전)
 
-**[이듬(E.UID)](https://euid.dev) 블렌디드 러닝, 학습용(디자인 → 개발)** 으로 제작된 Sass 버전의 [이디야 커피 브랜드 사이트](https://seulbinim.github.io/EDIYA-Sass/)입니다.
-
-## Sass 및 PostCSS 환경구성
-
-**EDIYA-Sass 폴더 복제하기**
-```
-git clone https://github.com/seulbinim/EDIYA-Sass.git
-```
-
 **.git 디렉토리 삭제**
 ```
 cd EDIYA-Sass
